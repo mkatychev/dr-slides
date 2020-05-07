@@ -26,7 +26,7 @@ rather a mock of the system
 
 # Why Darkroom
 * #### Solves **highest**  order of complexity of a system (the real thing) with simple solutioning
-* #### excludes front-end **𝓡𝓘𝓟 ⚰️**
+* #### The [niche](https://en.wikipedia.org/wiki/Ecological_niche) is well defined. Excludes front-end **𝓡𝓘𝓟 ⚰️**
 * #### Works best testing a fully working API.
 * #### Attempts to make make as few assumptions as possible about how a system will react.
 ---
@@ -96,7 +96,7 @@ user_reel
 ├── usr.04s.changebirthlocation.fr.json
 ├── usr.06e.changeemail.fr.json
 ├── usr.06s.changeemail.fr.json
-├── usr.07s.confrimemail.fr.json
+├── usr.07s.confirmemail.fr.json
 ├── usr.08s.changename.fr.json
 └── usr.09s.getuser.fr.json
 ```
@@ -122,7 +122,7 @@ usr.01se.createuser.fr.json
                     └─ Frame suffix // .fr.json
 ```
 
-- ##### **Reel name** - describes the functiality of the entire flow (subjective)
+- ##### **Reel name** - describes the functionality of the entire flow (subjective)
 - ##### **Sequence number** - a number representing a particular step in an object's state transition:
 - ##### **Frame type** - defined by the return body of a *Frame*:
 - ##### **Command name** - describes the functionality of the *Frame* JSON file
