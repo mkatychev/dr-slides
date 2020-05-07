@@ -26,9 +26,9 @@ rather a mock of the system
 
 # Why Darkroom
 * #### Solves **highest**  order of complexity of a system (the real thing) with simple solutioning
-* #### The [niche](https://en.wikipedia.org/wiki/Ecological_niche) is well defined. Excludes front-end **𝓡𝓘𝓟 ⚰️**
-* #### Works best testing a fully working API.
-* #### Attempts to make make as few assumptions as possible about how a system will react.
+* #### The [niche](https://en.wikipedia.org/wiki/Ecological_niche) is well defined
+* #### Works best testing a fully working API
+* #### Excludes front-end **𝓡𝓘𝓟 ⚰️**
 ---
 
 # filmReel
@@ -74,7 +74,7 @@ ul { font-size: 0.70em; }
 # Frame
   * A JSON file ending with the suffix `.fr.json`
 
-    - *Cut Instruction Set* - A JSON object holding Read and Write instructions that push and pull variables `"from"` and `"to"` the *Cut Register* through [*Cut operations*](cut.md#cut-operation).
+    - **Cut Instruction Set** - A JSON object holding Read and Write instructions that push and pull variables `"from"` and `"to"` the **Cut Register** through [*Cut operations*](cut.md#cut-operation).
     - **Request** - A [JSON object](https://en.wikipedia.org/wiki/JSON#Data_types_and_syntax) that fully defines how the *Frame* payload is built and sent.
     - **Response** - A JSON object that defines the expectations for the contents of a response message.
 
@@ -191,6 +191,7 @@ section { columns: 2; }
   - An example *Frame* that logs out a user using a *Cut Variable* to build the request URI.
 
 ```json
+// usr.03s.logout.fr.json
 {
   "protocol": "HTTP",
   "cut": {
@@ -212,7 +213,8 @@ section { columns: 2; }
 ```
 
 ---
-```
+```json
+// usr.03s.logout.fr.json
 {
   "protocol": "HTTP",
   "cut": {
@@ -234,7 +236,8 @@ section { columns: 2; }
 }
 ```
 ---
-```
+```json
+// usr.03s.logout.fr.json
 {
   "protocol": "HTTP",
   "cut": {
@@ -257,6 +260,7 @@ section { columns: 2; }
 ```
 ---
 ```json
+// usr.03s.logout.fr.json
 {
   "protocol": "HTTP",
   "cut": {
@@ -271,8 +275,8 @@ section { columns: 2; }
     "uri": "POST /logout/PeterJackson_h8tr_2"
   },
   "response": {
-<   "body": "User:PeterJackson_cr1t1c logged out",
->   "body": "User:PeterJackson_h8tr_2 logged out",
+<   "body": "User:PeterJackson_h8tr_2 logged out",
+>   "body": "User:PeterJackson_cr1t1c logged out",
     "status": 200
   }
 }
@@ -282,13 +286,14 @@ section { columns: 2; }
 - POST/IP demo
 ---
 #### Stripe
-- introduce sops for our stripe key in a bash script
+- SOPS!
 - Create a stripe token
 - Create a stripe customer
 
 ---
 #### CRS
-- Create customer flow in QA
+- Complex orchestration, simple execution
+- Create customer flow in staging
 ---
 #### PAS
 - Bind Policy flow
