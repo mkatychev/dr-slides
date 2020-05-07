@@ -72,11 +72,10 @@ ul { font-size: 0.70em; }
 
 
 # Frame
-  * A JSON file ending with the suffix `.fr.json`
-
-    - **Cut Instruction Set** - A JSON object holding Read and Write instructions that push and pull variables `"from"` and `"to"` the **Cut Register** through [*Cut operations*](cut.md#cut-operation).
-    - **Request** - A [JSON object](https://en.wikipedia.org/wiki/JSON#Data_types_and_syntax) that fully defines how the *Frame* payload is built and sent.
-    - **Response** - A JSON object that defines the expectations for the contents of a response message.
+* A JSON file ending with the suffix `.fr.json`
+* ##### **Cut Instruction Set** - A JSON object holding Read and Write instructions that push and pull variables `"from"` and `"to"` the **Cut Register** through **Cut operations**
+* ##### **Request** - A [JSON object](https://en.wikipedia.org/wiki/JSON#Data_types_and_syntax) that fully defines how the *Frame* payload is built and sent.
+* ##### **Response** - A JSON object that defines the expectations for the contents of a response message.
 
 ---
 <!-- _class: invert -->
