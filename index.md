@@ -13,9 +13,9 @@ A contract testing tool built in Rust.
 
 # Issues with some current test flows/pitfalls
 - At some point a system needs to be tested as it's going to be used
-* test setups are optimized for convenience
-* a lot of work goes into making tests more convenient
-* at a certain threshold, one is no longer testing how the real system works,
+- test setups are optimized for convenience
+- a lot of work goes into making tests more convenient
+- at a certain threshold, one is no longer testing how the real system works,
 rather a mock of the system
 
 ---
